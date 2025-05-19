@@ -44,7 +44,7 @@ def index():
         db.session.commit()
 
         message_body = f"Thank you for your submission,{first_name.capitalize()}. " \
-                       f"\nYour data has been successfully registered for the job."
+                       f"Your data has been successfully registered for the job."
 
         message = Message(subject="New Form Submission",
                           sender=app.config["MAIL_USERNAME"],
